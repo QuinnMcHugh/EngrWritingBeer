@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex,follow" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TODO: Beer Title</title>
+<link rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Wellfleet" rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Wellfleet" rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic" rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911" rel='stylesheet' type='text/css'>
+<script>
+   
+<!----- JQUERY FOR SLIDING NAVIGATION --->   
+$(document).ready(function() {
+  $('a[href*=#]').each(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+
+<!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
+         $(this).click(function() {
+            $("#nav li a").removeClass("active");
+            $(this).addClass('active');
+           $('html, body').animate({scrollTop: targetOffset}, 1000);
+           return false;
+         });
+      }
+    }
+  });
+
+});
+
+
+</script>
+</head>
+<body>
+
+
+<header id="header">
+<div class="content">
+<div id="logo"><a href=""> TODO: Beer Title </a></div>
+<nav id="nav">
+<ul>
+<li><a href="#slide1" class="active" title="Next Section">Intro</a></li>
+<li><a href="#slide5" title="Next Section">Beer Styles</a></li>
+<li><a href="#slide" title="Next Section">How it's Made</a></li>
+<li><a href="#slide" title="Next Section">Fun Facts</a></li>
+<li><a href="#slide" title="Next Section">Conclusion</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<div id="slide1">
+<div class="content">
+<div class="whitebox"><h2>A crash course in</h2></div>
+<div class="blackbox"><h1>CRAFT BEER</h1></div>
+<div id="divider"> </div>
+<h3>Jiaqian Huang, Quinn McHugh, Alex Mack, Alex Kusper</h3>
+<div id="ribbon"></div>
+
+</div>
+</div>
+<div id="slide2">
+<div class="content">
+<div class="quotes_container">
+<h3 class="quotes">Welcome to your new adult life, college grad! This is an exciting time with endless  possibilities awaiting you, but before you go off and solve all the world’s problems, I need to tell you something. It’s something you probably won’t take well, but it needs to be said: You’ve been lied to, systematically, your entire college career. No, it wasn’t your college dean who mislead you, or even your professors who made you purchase $200 books. Instead, it was your best friends who deceived you! All by letting you believe this was a respectable beverage: </h3>
+<img id="natty" src="img/natty.png" width="200px">
+</div>
+</div>
+</div>
+
+<div id="slide3">
+<div class="content">
+<div class="quotes_container">
+<h3 class="quotes">Just like you wouldn't be caught dead using a flip phone in 2017, it’s really time you graduate to something more sophisticated than what you chugged during football tailgates at age 19.</h3>
+<h3 class="quotes">Craft beer appreciation is a 21st century requirement for adult citizenship, and if you follow me, I promise to demystify the world of Craft Beer and open your eyes to what you’ve been missing.</h3>
+<img id="sorority_girls" src="img/sorority_girls.jpg" width="300px">
+</div>
+</div>
+</div>
+
+<div id="slide4">
+<div class="content">
+<div class="quotes_container">
+<h3 class="quotes">Historical U.S. Brewery Count</h3>
+<p class="quotes">The popularity of Craft Beer has skyrocketed since the year 2000, with more businesses, customers, and beer enthusiasts embracing the trend across the US. On top of that, the number of breweries nationally is at an all time high, making the time we live in a true Craft Beer revolution. </p>
+<img id="chart" src="img/chart.png" width="800px">
+</div>
+</div>
+</div>
+
+<div id="slide5">
+<div class="content">
+<div class="quotes_container">
+<h3 class="quotes">Beer Styles</h3>
+<p class="quotes">There are hundreds of unique styles of beer; some of the most popular are pilsners, pale ales, bocks, stouts, and porters. </p>
+<img src="img/beer_barrels.png" width="440px">
+<img src="img/beer_info.png" width="450px">
+</div>
+</div>
+</div>
+
+<div id="slide6">
+<div class="content">
+<div class="quotes_container">
+<h3 class="quotes">Closing Fun Facts</h3>
+<p class="quotes">
+<ul>
+	<li>At any given time 0.7% of the world is drunk, meaning 50 million people are drunk right now.</li>
+	<li>Moderate beer drinkers are 42% less likely to develop heart disease than non-drinkers (Domonell, 2015)</li>
+	<li>German style foods, especially braised meats, can be paired with Bock beers to achieve a roasted, malty and sweet flavor (Beer and Food Pairing Guide, 2016)</li>
+</ul>
+</p>
+</div>
+</div>
+</div>
+
+</body>
+</html>
