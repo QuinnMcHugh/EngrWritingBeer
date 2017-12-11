@@ -71,9 +71,10 @@ a.rpanel:hover {
     margin-top: 30px;
 }
 #nav {
-    width: 560px; /* Quinn edit: was 410 */
-    float: right;
+    width: 640px; /* Quinn edit: was 410 */
+    float: left;
     margin-top: 20px;
+    margin-left: -20px;
 }
 #logo a {
     color: #fff;
