@@ -241,7 +241,7 @@ ul.built {
 #slide5 {
     /*background: url(../img/slide5.jpg) 50% 0 no-repeat fixed;*/
     background-color: #e3e3e3;
-    height: 200px;
+    height: 260px;
     margin: 0 auto;
     padding: 250px 0;
     color: #fff;
@@ -252,6 +252,15 @@ ul.built {
     height: 200px;
     margin: 0 auto;
     padding: 170px 0 0 0;
+    background-size: cover;
+}
+#slide7 {
+    /*background-color: #e3e3e3;*/
+    background-color: #c2cad0;
+    height: 1400px;
+    margin: 0 auto;
+    padding: 250px 0;
+    color: #fff;
     background-size: cover;
 }
 #copyright {
@@ -346,6 +355,18 @@ ul.built {
 #slide6 h3 {
     margin-left: 15px;
 }
+#slide7 h3 {
+    font-size: 42px;
+    margin-top: -120px;
+}
+#slide7 p {
+    font-size: 18px;
+}
+#slide7 img {
+    display: block;
+    margin: 0 auto;
+}
+
 
 
 
